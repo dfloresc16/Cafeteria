@@ -28,6 +28,10 @@ public class Pedido {
     @Column(name = "address", nullable = false)
     private String address;
 
+    @Column(name = "quantity", nullable = false)
+    private Integer quantity;
+
+
 
     public Integer getId() {
         return id;

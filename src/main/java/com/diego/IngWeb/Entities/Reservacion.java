@@ -1,5 +1,6 @@
 package com.diego.IngWeb.Entities;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -26,6 +27,7 @@ public class Reservacion {
     private String noPeople;
 
     @Column(name = "schedule", nullable = false)
+    @JsonFormat(pattern="yyyy-MM-dd")
     private Date schedule;
 
 
