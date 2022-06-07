@@ -23,7 +23,7 @@ async function crearPedido(){
     datos.name = document.getElementById("nombre").value;
     datos.email = document.getElementById("email").value;
     datos.product = document.getElementById("producto").value;
-    datos.cellphone = document.getElementById("telefono").value;
+    datos.cellphone = document.getElementById("xtelefono").value;
     datos.quantity = document.getElementById("cantidad").value;
     datos.address = document.getElementById("direccion").value;
     console.log(datos);
