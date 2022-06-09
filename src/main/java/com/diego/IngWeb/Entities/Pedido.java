@@ -10,25 +10,25 @@ import java.util.Date;
 public class Pedido {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", nullable = false)
+    @Column(name = "id", nullable = true)
     private Integer id;
 
-    @Column(name = "name", nullable = false)
+    @Column(name = "name", nullable = true)
     private String name;
 
-    @Column(name = "email", nullable = false)
+    @Column(name = "email", nullable = true)
     private String email;
 
-    @Column(name = "cellphone", nullable = false)
+    @Column(name = "cellphone", nullable = true)
     private String cellphone;
 
-    @Column(name = "product", nullable = false)
+    @Column(name = "product", nullable = true)
     private String product;
 
-    @Column(name = "address", nullable = false)
+    @Column(name = "address", nullable = true)
     private String address;
 
-    @Column(name = "quantity", nullable = false)
+    @Column(name = "quantity", nullable = true)
     private Integer quantity;
 
 

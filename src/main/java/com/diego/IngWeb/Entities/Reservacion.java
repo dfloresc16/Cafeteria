@@ -11,22 +11,22 @@ import java.util.Date;
 public class Reservacion {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", nullable = false)
+    @Column(name = "id", nullable = true)
     private Integer id;
 
-    @Column(name = "name", nullable = false)
+    @Column(name = "name", nullable = true)
     private String name;
 
-    @Column(name = "email", nullable = false)
+    @Column(name = "email", nullable = true)
     private String email;
 
-    @Column(name = "cellphone", nullable = false)
+    @Column(name = "cellphone", nullable = true)
     private String cellphone;
 
-    @Column(name = "noPeople", nullable = false)
+    @Column(name = "noPeople", nullable = true)
     private String noPeople;
 
-    @Column(name = "schedule", nullable = false)
+    @Column(name = "schedule", nullable = true)
     @JsonFormat(pattern="yyyy-MM-dd")
     private Date schedule;
 
